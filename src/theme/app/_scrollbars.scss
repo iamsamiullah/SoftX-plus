@@ -8,7 +8,7 @@
 .container-2McqkF {
 	overflow: hidden overlay !important;
 	&::-webkit-scrollbar {
-		width: 8px;
+		width: var(--scrollbar-width);
 		display: none;
 		background: transparent !important;
 	}
