@@ -257,7 +257,7 @@ html.theme-light .container-YkUktl {
 .list-1AJFv_::-webkit-scrollbar,
 [class*=scrollerBase-]::-webkit-scrollbar,
 .container-2McqkF::-webkit-scrollbar {
-  width: 8px;
+  width: var(--scrollbar-width);
   display: none;
   background: transparent !important;
 }
