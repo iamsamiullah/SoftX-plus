@@ -35,6 +35,7 @@
   --channel-height: 40px;
   --member-height: 54px;
   --dm-height: 56px;
+  --scrollbar-width: 8px;
   --scrollbar-background: rgb(255 255 255 / .05);
   --scrollbar-background-hover: rgb(255 255 255 / .1);
   --scrollbar-background-active: rgb(255 255 255 / .15);
