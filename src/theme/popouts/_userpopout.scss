@@ -62,7 +62,7 @@
 	    position: absolute;
 	    background: inherit;
 	    border-radius: var(--roles-roundness-calc);
-	    border: 1px solid transparent;
+	    border: var(--roles-border-thickness);
 	    -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
 	    -webkit-mask-composite: xor;
     }
