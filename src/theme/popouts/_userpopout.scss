@@ -28,19 +28,18 @@
 				box-shadow: 0 0 calc(var(--glow-intensity) * 10px) calc(var(--glow-intensity) * 2px) rgb(var(--accent), 0.2);
 			}
 		}
-
 		.role-2TIOKu {
-			border: 1px solid var(--border) !important;
-			height: auto;
-			padding: 8px 10px;
-            transform: translate(0); /* Modified */
-            border: 0; /* Modified */
+         		transform: translate(0); /* Modified */
+        		border: 0; /* Modified */
 			border-radius: var(--roles-roundness-calc); /* Modified */
-			background: var(--bg-primary);
+			/*border: 1px solid var(--border) !important;
+			height: auto;
+			padding: 8px 10px; */
+			/* background: var(--bg-primary);
 			position: relative;
 			overflow: hidden;
 			&:hover .roleCircle-3K9O3d {
-				opacity: 1;
+				opacity: 1; */
 			}
 		}
 
@@ -70,7 +69,7 @@
         /*---------Snippet end-----------*/ 
 
 
-		.roleRemoveButton-17oXnT {
+		/* .roleRemoveButton-17oXnT {
 			position: absolute;
 			inset: 0;
 			z-index: 0;
@@ -89,7 +88,7 @@
 			z-index: 2;
 			margin: 0;
 		}
-	}
+	} */
 
 	.bodyInnerWrapper-2bQs1k {
 		background: transparent;
