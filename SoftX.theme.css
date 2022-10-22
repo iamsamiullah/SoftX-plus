@@ -1,94 +1,53 @@
 /**
  * @name SoftX
- * @author Sami
+ * @author Gibbu
  * @version 1.0.0
- * @description Fork of SoftX by Gibbu
+ * @description A soft and comfy feel for Discord.
+ * @source https://github.com/DiscordStyles/SoftX
  * @invite ZHthyCw
- * @authorId 174868361040232448
- * @source https://github.com/iamsamiullah/SoftX
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
-@import url('https://iamsamiullah.github.io/SoftX/SoftX.css');
-@import url('https://iamsamiullah.github.io/SoftX/RadialGlow.css');
-@import url('https://iamsamiullah.github.io/SoftX/VerticalUserArea.css');
+@import url('https://discordstyles.github.io/SoftX/SoftX.css');
 
-
-
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+/* Theme imports */
+@import url("https://discordstyles.github.io/SoftX/RadialGlow.css"); /* RadialGlow effect for avatars. | Remove this line to disable. */
+@import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css"); /* Vertical user area. Moves the mute, defean and settings icons to the server list. | Remove this line to disable. */
+@import url("https://discordstyles.github.io/Addons/windows-titlebar.css"); /* Windows titlebar. | Remove this line to disable. */
 :root {
-  --background-image: url('https://i.imgur.com/Nglfni6.png'); /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
-  --background-blur: 0px; /* Blur intensity of --background-image */
-  --opacity: 0.85; /* Opacity of overall app. | Default: .85 */
-  --accent: 40,209,193; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
-  --glow-intensity: 0; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
-  --font: Inter; /* Custom font | Default: 'Inter' */
-  
-  --channels-width: 260px; /* Width of the channels list. | Default: 300px */
-  --guilds-width: 60px; /* Width of the server list. | Default: 105px */
-  --members-width: 260px; /* Width of the members list. | Default: 280px */
-  --server-size: 45px; /* Size of the servers inside the server list. | Default: 50px */
-  --chat-avatar-size: 42px; /* Size of the chat avatars. | Default: 32px */
-  --toolbar-height: 55px; /* Default: 55px */
-  
-  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
-  --rs-medium-spacing: 2px; /* Gap between avatar and status for User popout | MUST end in px */
-  --rs-large-spacing: 2px; /* Gap between avatar and status for User profiles | MUST end in px */
-  --rs-small-width: 1.5px; /* Ring width | Default: 1.5px */
-  --rs-medium-width: 2px;
-  --rs-large-width: 2px;
-  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-
+  /*
+   * SoftX variables
+   */
+  --background-image: url("https://i.imgur.com/Nglfni6.png"); /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-blur: 0px; /* Blur intensity of --background-image | Must end in px | Default: 0px */
+  --accent: 0, 231, 169; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
+  --channels-width: 300px; /* Width of the channels list. | Default: 300px */
+  --guilds-width: 105px; /* Width of the server list. | Default: 105px */
+  --members-width: 280px; /* Width of the members list. | Default: 280px */
+  --server-size: 50px; /* Size of the servers inside the server list. | Default: 50px */
+  --chat-avatar-size: 32px; /* Size of the chat avatars. | Default: 32px */
+  --glow-intensity: 1; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
+  --opacity: .85; /* Opacity of overall app. | Default: .85 */
+  --font: "Inter"; /* Custom font | Default: 'Inter' */
   --avatar-roundness: 50%; /* Roundness for avatars. | 0% = Square, 50% = Circle | Default: 50% */
-  --server-roundness: 35%; /* Roundness for servers. | 0% = Square, 50% = Circle | Default: 50% */ 
-  --settingsiconssize: 18px;
-  --settingsiconsgap: 14px;
-   
-   /* Scrollbar settings */
-  --scrollbar-width: 10px; /* Default: 8px */
-  --border-radius: 25px; /* Default: 25px */
-  --scrollbar-background: #4e4e4e; 
-  --scrollbar-background-hover: #8e8e8e;
-  --scrollbar-background-active: #757575;
-  
-  --roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
-  --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px)
+  --server-roundness: 50%; /* Roundness for servers. | 0% = Square, 50% = Circle | Default: 50% */
+  /*
+   * RadialStatus veriables
+   */
+  --rs-small-spacing: 2px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
+  --rs-medium-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout) | Default: 4px */
+  --rs-large-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout fullscreen) | Default: 4px */
+  --rs-small-width: 1.5px; /* Ring width (follows same sizing as above) | Default: 1.5px */
+  --rs-medium-width: 2px; /* Default: 2px */
+  --rs-large-width: 2px; /* Default: 2px */
+  /* Customizable colors */
+  --rs-online-color: #43b581; /* Default: #43b581 */
+  --rs-idle-color: #faa61a; /* Default: #faa61a */
+  --rs-dnd-color: #f04747; /* Default: #f04747 */
+  --rs-offline-color: #636b75; /* Default: #636b75 */
+  --rs-streaming-color: #643da7; /* Default: #643da7 */
+  --rs-invisible-color: #747f8d; /* Default: #747f8d */
+  --rs-phone-color: var(--rs-online-color); /* Color of the phone for mobile users | Default: var(--rs-online-color) */
+  --rs-phone-visible: block; /* Visibility of the phone for mobile users | Default: block */
 }
-
-
-/*------- Any custom CSS below here --------------*/
-
-/* HOTFIX FOR MISALIGNED USER-POPOUTS */
-.bannerSVGWrapper-qc0szY mask {
-    display: none;
-}
-
-.userPopout-2j1gM4 .wrapper-1VLyxH::before,
-.avatar-3QF_VA::before {
-    content: " ";
-    font-size: 0px;
-    background-color: var(--background-floating);
-    float: left;
-    border-radius: 50%;
-    height: 94px;
-    width: 94px;
-    margin: -7px;
-}
-
-.avatar-3QF_VA::before {
-    height: 136px;
-    width: 136px;
-    margin: -8px;
-}
-
-.userPopout-2j1gM4 [class^="avatarWrapper"] .wrapper-1VLyxH,
-.avatarHint-k7pYop {
-    top: 9px;
-}
-
-
-
-
-
-
-
-
