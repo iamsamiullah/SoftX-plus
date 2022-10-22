@@ -1987,6 +1987,13 @@ body .footer-GXWBBp,
     border-color: transparent;
   }
 }
+#app-mount {
+  /* Root */
+}
+#app-mount :root {
+  --roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
+  --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px) ;
+}
 #app-mount .userPopout-2j1gM4 {
   box-shadow: none;
   border: 1px solid var(--border);
@@ -1994,6 +2001,8 @@ body .footer-GXWBBp,
   -webkit-backdrop-filter: blur(var(--blur));
           backdrop-filter: blur(var(--blur));
   border-radius: 6px;
+  /*---------New snippet----------*/
+  /*---------Snippet end-----------*/
 }
 #app-mount .userPopout-2j1gM4 .input-2g-os5 {
   border: 2px solid transparent;
@@ -2010,24 +2019,29 @@ body .footer-GXWBBp,
   border-color: rgb(var(--accent));
   box-shadow: 0 0 calc(var(--glow-intensity) * 10px) calc(var(--glow-intensity) * 2px) rgb(var(--accent), 0.2);
 }
-#app-mount :root {
-  --roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
-  --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px) ;
+#app-mount .userPopout-2j1gM4 .role-2TIOKu {
+  border: 1px solid var(--border) !important;
+  height: auto;
+  padding: 8px 10px;
+  transform: translate(0); /* Modified */
+  border: 0; /* Modified */
+  border-radius: var(--roles-roundness-calc); /* Modified */
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
 }
-#app-mount .role-2TIOKu {
-  transform: translate(0);
-  border: 0;
-  border-radius: var(--roles-roundness-calc);
+#app-mount .userPopout-2j1gM4 .role-2TIOKu:hover .roleCircle-3K9O3d {
+  opacity: 1;
 }
-#app-mount .role-2TIOKu .roleRemoveIcon-387wKV {
+#app-mount .userPopout-2j1gM4 .role-2TIOKu .roleRemoveIcon-387wKV {
   margin: 0;
   left: unset;
   transform: translate(50%, -50%);
 }
-#app-mount .role-2TIOKu .roleRemoveButton-17oXnT {
+#app-mount .userPopout-2j1gM4 .role-2TIOKu .roleRemoveButton-17oXnT {
   position: static;
 }
-#app-mount .role-2TIOKu .roleCircle-3K9O3d:before {
+#app-mount .userPopout-2j1gM4 .role-2TIOKu .roleCircle-3K9O3d:before {
   content: "";
   top: 0;
   left: 0;
@@ -2038,9 +2052,37 @@ body .footer-GXWBBp,
   position: absolute;
   background: inherit;
   border-radius: var(--roles-roundness-calc);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
+}
+#app-mount .userPopout-2j1gM4 .roleRemoveButton-17oXnT {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+#app-mount .userPopout-2j1gM4 .roleCircle-3K9O3d {
+  margin: 0;
+  filter: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  opacity: 0.2;
+}
+#app-mount .userPopout-2j1gM4 .roleName-2ZJJYR {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+#app-mount .bodyInnerWrapper-2bQs1k {
+  background: transparent;
+}
+#app-mount .note-Go5ZP2 {
+  margin: 0;
+}
+#app-mount .footer-3naVBw {
+  background: transparent;
 }
 
 #app-mount .container-18GwIk {
