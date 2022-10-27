@@ -1,13 +1,12 @@
 /**
- * @name SoftX
- * @author Gibbu
- * @version 1.0.0
- * @description A soft and comfy feel for Discord.
- * @source https://github.com/iamsamiullah/SoftX
- * @invite ZHthyCw
+ * @name SoftX+
+ * @author Sami
+ * @version 1.9.0
+ * @description A fork of Gibbu's SoftX
+ * @source https://github.com/iamsamiullah/SoftX-plus
 */
 
-@import url('https://iamsamiullah.github.io/SoftX/SoftX.css');
+@import url('https://iamsamiullah.github.io/SoftX-plus/SoftX.css');
 
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
