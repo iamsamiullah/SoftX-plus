@@ -1,22 +1,22 @@
 /**
- * @name SoftX Custom
+ * @name SoftX+
  * @author Sami
  * @version 1.0.0
  * @description Fork of SoftX
- * @source https://github.com/iamsamiullah/SoftX
+ * @source https://github.com/iamsamiullah/SoftX+
 */
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 /* Theme imports */
-@import url("https://discordstyles.github.io/SoftX/SoftX.css"); /* Base theme, don't remove*/
-@import url("https://discordstyles.github.io/SoftX/RadialGlow.css"); /* RadialGlow effect for avatars*/
-/* @import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css"); */
+@import url("https://discordstyles.github.io/SoftX+/SoftX+.css"); /* Base theme, don't remove*/
+@import url("https://discordstyles.github.io/SoftX+/RadialGlow.css"); /* RadialGlow effect for avatars*/
+/* @import url("https://discordstyles.github.io/SoftX+/VerticalUserArea.css"); */
 
 
 :root {
-	/* SoftX variables */
+	/* SoftX+ variables */
 	--background-image: url('https://i.imgur.com/Nglfni6.png'); /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
 	--background-blur: 0px; /* Blur intensity of --background-image | Must end in px | Default: 0px */
 
