@@ -1,9 +1,9 @@
 {
   "name": "softx",
-  "version": "1.0.0",
-  "description": "A soft and comfy feel for Discord.",
-  "repository": "https://github.com/DiscordStyles/SoftX.git",
-  "author": "Gibbu <Gibbu_@hotmail.com>",
+  "version": "1.0",
+  "description": "A fork of Gibbu's SoftX",
+  "repository": "https://github.com/iamsamiullah/SoftX.git",
+  "author": "Sami Ullah <its_samiullah@outlook.com.com>",
   "license": "MIT",
   "private": false,
   "type": "module",

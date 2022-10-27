@@ -5,10 +5,10 @@ export default {
 		author: "Gibbu",
 		version: "1.0.0",
 		description: "A soft and comfy feel for Discord.",
-		source: "https://github.com/DiscordStyles/SoftX",
+		source: "https://github.com/iamsamiullah/SoftX",
 		invite: "ZHthyCw"
 	},
-	baseImport: 'https://discordstyles.github.io/SoftX/SoftX.css',
+	baseImport: 'https://iamsamiullah.github.io/SoftX/SoftX.css',
 	addons: [
 		['src/addons/_radialglow.scss', 'dist/RadialGlow.css'],
 		['src/addons/_verticaluserarea.scss', 'dist/VerticalUserArea.css'],

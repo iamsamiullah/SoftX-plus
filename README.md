@@ -10,12 +10,12 @@ A soft and comfy feel for Discord.
 ## Download
 
 BetterDiscord Download: [https://betterdiscord.app/theme/SoftX](https://betterdiscord.app/Download?id=515)  
-Powercord Install: `git clone https://github.com/DiscordStyles/SoftX --branch deploy`
+Powercord Install: `git clone https://github.com/iamsamiullah/SoftX --branch deploy`
 
 ## Contributing
 
-Looking to contribute to SoftX theme? Read the the [contributing.md](https://github.com/DiscordStyles/SoftX/blob/main/CONTRIBUTING.md) file.
+Looking to contribute to SoftX theme? Read the the [contributing.md](https://github.com/iamsamiullah/SoftX/blob/main/CONTRIBUTING.md) file.
 
 ## License
 
-See the [LICENSE](https://github.com/DiscordStyles/SoftX/blob/main/LICENSE.md) file for license rights and limitations (MIT).
+See the [LICENSE](https://github.com/iamsamiullah/SoftX/blob/main/LICENSE.md) file for license rights and limitations (MIT).
