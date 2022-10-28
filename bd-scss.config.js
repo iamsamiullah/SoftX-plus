@@ -1,14 +1,14 @@
 /** @type {import('bd-scss/lib/config').Config} */
 export default {
 	meta: {
-		name: "SoftX",
-		author: "Gibbu",
-		version: "1.0.0",
+		name: "+",
+		author: "Sami",
+		version: "1.9.0",
 		description: "A soft and comfy feel for Discord.",
-		source: "https://github.com/iamsamiullah/SoftX",
+		source: "https://github.com/iamsamiullah/SoftX-plus",
 		invite: "ZHthyCw"
 	},
-	baseImport: 'https://iamsamiullah.github.io/SoftX/SoftX.css',
+	baseImport: 'https://iamsamiullah.github.io/SoftX-plus/SoftX-plus.css',
 	addons: [
 		['src/addons/_radialglow.scss', 'dist/RadialGlow.css'],
 		['src/addons/_verticaluserarea.scss', 'dist/VerticalUserArea.css'],
