@@ -11,8 +11,8 @@
 
 /* Theme imports */
 @import url("https://iamsamiullah.github.io/SoftX-plus/SoftX.css"); /* Base theme, don't remove*/
-@import url("https://iamsamiulah.github.io/SoftX-plus/RadialGlow.css"); /* RadialGlow effect for avatars*/
-/*@import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css"); */
+@import url("https://iamsamiulah.github.io/SoftX-plus/RadialGlow.css");	 /* RadialGlow effect for avatars*/
+@import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css");
 
 
 :root {
@@ -35,7 +35,7 @@
 	--font: 'Inter'; /* Custom font | Default: 'Inter' */
 
 	--avatar-roundness: 50%; /* Roundness for avatars. | 0% = Square, 50% = Circle | Default: 50% */
-	--server-roundness: 35%; /* Roundness for servers. | 0% = Square, 50% = Circle | Default: 50% */
+	--server-roundness: 35%; /* Roundness for servers. | 0% = Square, 50% = Circle | Default: 35% */
 
 
 
@@ -52,5 +52,6 @@
   --scrollbar-background: #4e4e4e; /* Default: #4e4e4e */
   --scrollbar-background-hover: #8e8e8e; /* Default: #8e8e8e */
   --scrollbar-background-active: #757575; /* Default: #757575 */
-  --scrollbar-width: 10px; /* Default: 8px */
+  --scrollbar-width: 10px; /* Default: 10px */
+  --border-radius: 5px; /* Scrollbar edges, | Rounded: 5px , Flat: 0px */
 }
