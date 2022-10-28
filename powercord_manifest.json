@@ -3,7 +3,7 @@
 	"description": "A fork of Gibbu's SoftX.",
 	"version": "1.0.0",
 	"author": "Gibbu#1211",
-	"theme": "SoftX.theme.css",
+	"theme": "SoftX-plus.theme.css",
 	"consent": ["ext_listing"],
 	"license": "MIT"
 }
