@@ -83,7 +83,7 @@ body,
 }
 
 html.theme-light .app-2CXKsg::after {
-  content: "SoftX+ is not build for Lightmode.\aPlease switch to Dark mode in your Discord Appearance Settings.";
+  content: "SoftX is not build for Lightmode.\aPlease switch to Dark mode in your Discord Appearance Settings.";
   line-height: 1.5;
   white-space: pre-wrap;
   border-top: 1px solid var(--border);
@@ -108,7 +108,7 @@ html.theme-light .container-YkUktl {
 
 [aria-label=USER_SETTINGS] .info-1sUqUG > span:first-child::before {
   display: block;
-  content: "SoftX+ v" var(--softx-version);
+  content: "SoftX v" var(--softx-version);
 }
 
 #app-mount .container-ZMc96U {
