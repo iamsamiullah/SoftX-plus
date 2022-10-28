@@ -1,18 +1,18 @@
 /**
  * @name SoftX+
  * @author Sami
- * @version 1.9.0
- * @description Fork of SoftX
+ * @version Auto Update
+ * @description A fork of SoftX with minor changes
  * @source https://github.com/iamsamiullah/SoftX-plus
 */
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
-
 /* Theme imports */
 @import url("https://iamsamiullah.github.io/SoftX-plus/SoftX-plus.css"); /* Base theme, don't remove*/
-@import url("https://iamsamiulah.github.io/SoftX-plus/RadialGlow.css");	 /* RadialGlow effect for avatars*/
-@import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css");
+
+@import url("https://iamsamiulah.github.io/SoftX-plus/RadialGlow.css");	 /* RadialGlow effect for avatars. */
+@import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css"); /* Vertical user area. */
 
 
 :root {
@@ -48,10 +48,12 @@
 	--rs-medium-width: 2px; /* Default: 2px */
 	--rs-large-width: 2px; /* Default: 2px */
 
-  /* Scrollbar Settings */
-  --scrollbar-background: #4e4e4e; /* Default: #4e4e4e */
-  --scrollbar-background-hover: #8e8e8e; /* Default: #8e8e8e */
-  --scrollbar-background-active: #757575; /* Default: #757575 */
-  --scrollbar-width: 10px; /* Default: 10px */
-  --border-radius: 5px; /* Scrollbar edges, | Rounded: 5px , Flat: 0px */
+ 	/* Scrollbar Settings */
+  	--scrollbar-background: #4e4e4e; /* Default: #4e4e4e */
+  	--scrollbar-background-hover: #8e8e8e; /* Default: #8e8e8e */
+ 	--scrollbar-background-active: #757575; /* Default: #757575 */
+ 	--scrollbar-width: 10px; /* Default: 10px */
+  	--border-radius: 5px; /* Scrollbar edges, | Rounded: 5px , Flat: 0px */
 }
+
+/*-------------CUSTOM CSS GOES BELOW---------------*/
