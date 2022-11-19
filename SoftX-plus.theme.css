@@ -29,7 +29,7 @@
 	--channels-width: 240px; /* Width of the channels list. | Default: 260px */
 	--guilds-width: 65px; /* Width of the server list. | Default: 65px */
 	--members-width: 280px; /* Width of the members list. | Default: 280px */
-  --toolbar-height: 60px; /* Height of the Toolbar | Default: 60px */
+  	--toolbar-height: 60px; /* Height of the Toolbar | Default: 60px */
 
 	--server-size: 45px; /* Size of the servers inside the server list. | Default: 45px */
 	--chat-avatar-size: 50px; /* Size of the chat avatars. | Default: 50px */
