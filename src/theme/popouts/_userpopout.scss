@@ -1,104 +1,55 @@
 #app-mount {
-    /* Root */ 
-    :root{
-        --roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
-      
-        --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px)
-      }
-
-	.userPopout-2j1gM4 {
-		box-shadow: none;
+	.userPopoutOuter-3AVBmJ {
+		border-radius: 0;
 		border: 1px solid var(--border);
-		background: var(--bg-primary);
 		backdrop-filter: blur(var(--blur));
-		border-radius: 6px;
-
-		.input-2g-os5 {
-			border: 2px solid transparent;
-			background: rgb(255 255 255 / 0.05);
-			transition: var(--transition);
-			transition-property: border-color, box-shadow;
-			color: var(--text-normal);
-			border-radius: 6px;
-			&:hover {
-				border-color: rgb(255 255 255 / 0.05);
-			}
-			&:focus {
-				border-color: rgb(var(--accent));
-				box-shadow: 0 0 calc(var(--glow-intensity) * 10px) calc(var(--glow-intensity) * 2px) rgb(var(--accent), 0.2);
-			}
-		}
-		.role-2TIOKu {
-         		transform: translate(0); /* Modified */
-        		border: 0; /* Modified */
-			border-radius: var(--roles-roundness-calc); /* Modified */
-			
-			}
-		}
-
-        /*---------New snippet----------*/
-       
-        .role-2TIOKu .roleRemoveIcon-387wKV {
-            margin: 0;
-            left: unset;
-            transform: translate(50%,-50%);
-          }
-
-        .role-2TIOKu .roleRemoveButton-17oXnT{position: static}
-        .role-2TIOKu .roleCircle-3K9O3d:before {
-	    content: '';
-	    top: 0;left: 0;
-	    z-index: -1;
-	    width: 100%;
-	    height: 100%;
-	    box-sizing: border-box;
-	    position: absolute;
-	    background: inherit;
-	    border-radius: var(--roles-roundness-calc);
-	    border: var(--roles-border-thickness);
-	    -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
-	    -webkit-mask-composite: xor;
-    }
-
-	.bodyInnerWrapper-2bQs1k {
+		box-shadow: none;
 		background: transparent;
-	}
+		padding: 0;
+		
+		.banner-2boKnS {
+			border-radius: 0;
+		}
+		.avatarPositionPremiumNoBanner-nWzERs {
+			top: 42px;
+			left: 18px;
+		}
+		.avatarPositionPremiumBanner-2nq2Fy {
+			top: 72px;
+			left: 18px;
+		}
 
-	.note-Go5ZP2 {
+		&[style*="--profile-gradient-primary-color"] .input-2g-os5:focus-within {
+			border-color: var(--profile-gradient-primary-color, rgb(var(--accent))) !important;
+    	box-shadow: 0 0 calc(var(--input-glow-intensity) * 12px) calc(var(--input-glow-intensity) * 2px) var(--profile-gradient-primary-color, rgb(var(--accent), .25)) !important;
+		}
+		&.theme-light {
+			--profile-body-divider-color: var(--border) !important;
+			--profile-body-background-color: var(--fg-secondary) !important;
+			--header-primary: #fff !important;
+			--header-secondary: #aaa !important;
+			--text-normal: var(--primary-dark-200) !important;
+			--profile-role-pill-border-color: transparent !important;
+			--profile-role-pill-background-color: var(--fg-secondary) !important;
+			--input-background: hsl(0 0% 7% / 0.7) !important;
+		}
+	}
+	.userProfileInner-3F03PX {
+		border-radius: 0;
+		background: transparent;
+		&::before {
+			width: 100%;
+			height: 100%;
+			background: transparent;
+		}
+	}
+	.overlayBackground-1KgwVi {
 		margin: 0;
-	}
-
-	.footer-3naVBw {
+		padding-top: 16px;
 		background: transparent;
 	}
-
-
-/*---------HOTFIX FOR MISALIGNED USER-POPOUTS-------------*/
-.bannerSVGWrapper-qc0szY mask {
-    display: none;
-}
-
-.userPopout-2j1gM4 .wrapper-1VLyxH::before,
-.avatar-3QF_VA::before {
-    content: " ";
-    font-size: 0px;
-    background-color: var(--background-floating);
-    float: left;
-    border-radius: 50%;
-    height: 94px;
-    width: 94px;
-    margin: -7px;
-}
-
-.avatar-3QF_VA::before {
-    height: 136px;
-    width: 136px;
-    margin: -8px;
-}
-
-.userPopout-2j1gM4 [class^="avatarWrapper"] .wrapper-1VLyxH,
-.avatarHint-k7pYop {
-    top: 9px;
-}
-
+	.messageInputContainer-2rGDH8 {
+		border: none;
+		border-radius: 0;
+	}
 }
