@@ -1,8 +1,8 @@
-#channelTabs-container {
+div#channelTabs-container {
     background: #1A1A1A;
 }
 
-/* "Create Roles" menu */
+/*----"Create Roles" menu----*/
 .stickyHeader-1Sunlx {
     background: #1A1A1A;
 }
@@ -13,7 +13,7 @@
     background: #1A1A1A;;
 }
 
-/* "Welcome screen" settings */
+/*----"Welcome screen" settings----*/
 .previewContainer-29oeA6 {
     background: transparent;
 }
