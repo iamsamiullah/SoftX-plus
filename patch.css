@@ -1,5 +1,21 @@
+/*----------------IMPORTS------------*/
+/* Create server modal dark-mode */ @import url(https://neodymium7.github.io/BetterDiscordStuff/CSS/AddServerDarkMode.css);
+/* Settings Icons */             @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+/* Invites Redesigned */         @import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
+/* Colored SVGs */               @import url(https://nyri4.github.io/Discolored/main.css);
+/*----------------------------------------------------------------------------------------------- */
+
+
+/*____________THEME FIX___________*/
 div#channelTabs-container {
     background: #1a1a1a;
+}
+
+/*----Status picker avatar fix----*/
+#app-mount .avatarWrapper-1B9FTW .svg-2azL_l{
+    width: 40px;
+    height: 40px;
+    transform: none;
 }
 
 /*----"Create Roles" menu----*/
@@ -13,7 +29,130 @@ div#channelTabs-container {
     background: #1A1A1A;;
 }
 
-/*----"Welcome screen" settings----*/
+/*-----"Welcome screen" settings----*/
 .previewContainer-29oeA6 {
     background: transparent;
+}
+/*_____________________Custom CSS________________________*/
+
+/*---Rounded Message box---*/
+#app-mount .channelTextArea-1FufC0 {
+    border-radius: 50px;
+}
+
+/*----Hides biling category----*/
+.side-2ur1Qk>div:nth-child(-n+16):not(:nth-child(-n+9)){
+    display: none;
+  }
+
+/* ----Better Jump To Present Button----*/
+[class*="jumpToPresentBar"] {
+    display: contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+    display: none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+    position: absolute;
+    z-index: 1;
+    bottom: 24px;
+    right: 22px;
+    padding: 8px !important;
+    height: auto;
+    background-color: #5865F2;
+    box-shadow: var(--elevation-high);
+    border-radius: 100px;
+    display: flex;
+    font-size: 0px;
+    color: transparent;
+    transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+    order: -1;
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+    top: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #FFFFFF;
+    transition: margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+    padding: 8px 18px !important;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: font-size .2s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+    margin-right: 2px;
+    margin-left: -6px;
+}
+
+/*-----BetterDiscord settings under user account-----*/
+.side-2ur1Qk>:where(.bd-updates-tab,.bd-emotes-tab,.bd-sidebar-header,.bd-settings-tab,.bd-customcss-tab,.bd-plugins-tab,.bd-themes-tab,.pluginrepo-tab,.themerepo-tab,:where(.bd-updates-tab,.bd-themes-tab,.pluginrepo-tab,.themerepo-tab,.bd-customcss-tab)+.separator-2wx7h6,:nth-child(-n+9)){
+  order: -1;
+}
+
+/*-----FreeEmojis grayscale fix-----*/
+.emojiItem-277VFM.emojiItemDisabled-3VVnwp {
+    filter: grayscale(0);
+}
+
+/*-----Devices tab better highlight-----*/
+.sessions-2KZ0-Q .session-9khLqt {
+    gap: 12px;
+}
+.sessions-2KZ0-Q .sessionInfo-HxfESS {
+    gap: 0;
+}
+.sessions-2KZ0-Q .eyebrow-Ejf06y.sessionInfoRow-pEX9fY {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+    font-family: var(--font-primary);
+    text-transform: capitalize;
+}
+.sessions-2KZ0-Q .text-sm-medium-3Pz3rB.sessionInfoRow-pEX9fY {
+    color: var(--channels-default);
+}
+.sessions-2KZ0-Q .sessionIcon-2fwSzb {
+    background: none;
+    color: var(--interactive-normal);
+}
+.sessions-2KZ0-Q .session-9khLqt.currentSession-1g_u10 .sessionIcon-2fwSzb {
+    color: var(--status-positive);
+}
+
+
+/*----Border roles----*/
+:root{
+  --roles-roundness: 5; /* change the 0 to any other number if you want the roles to be fully round */
+
+  --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px)
+}
+.role-2TIOKu {
+  transform: translate(0);
+  border: 0;
+  border-radius: var(--roles-roundness-calc);
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT{position: static}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+  content: '';
+  top: 0;left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  background: inherit;
+  border-radius: var(--roles-roundness-calc);
+  border: 1px solid transparent;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
 }
