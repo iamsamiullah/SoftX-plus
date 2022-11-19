@@ -251,10 +251,6 @@ html.theme-light .container-YkUktl {
 [class*=scrollerBase-],
 .container-2McqkF {
   overflow: hidden overlay !important;
-  background: transparent;
-}
-.roleMemberList-ub4EsQ.thin-31rlnD.scrollerBase-_bVAAt {
-  background: #1a1a1a;
 }
 .auto-2K3UW5::-webkit-scrollbar,
 .members-3WRCEx::-webkit-scrollbar,
@@ -4191,39 +4187,4 @@ body #ChannelsPreview::before {
   border-radius: var(--server-roundness, 50%);
   -webkit-mask: none !important;
           mask: none !important;
-}
-
-/*-------------HOTFIX by Sami---------------*/
-
-/* "Create role" section unthemed */
-.stickyHeader-1Sunlx{
-  background: transparent;
-}
-.titleContainer-3fPic2{
-  background: transparent;
-}
-
-/* "It's quite for now, no friends online." */
-.emptyCard-KDifrB{
-  background: transparent;
-}
-
-/* "Channel Tabs" Background fix */
-div#channelTabs-container {
-  background: #151516;
-}
-
-/* Forum fix */
-.container-2nXUah {
-	background: transparent;
-}
-.container-3arpDl {
-background: transparent; }
-
-/* Channel perms fix */
-.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.horizontal-1Piu5-.flex-3BkGQD.directionRow-2Iu2A9.justifyBetween-wAERV6.alignCenter-14kD11.noWrap-hBpHBz.folderHeader-2FpErk {
-  background: #1a1a1a;
-}
-.card-2EUiNF{
-	background: transparent;
 }
